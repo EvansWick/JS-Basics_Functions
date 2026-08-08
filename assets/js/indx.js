@@ -18,3 +18,23 @@ const calculateSurfaceArea = (shape, param1, param2) => {
     return "Incorrect shape";
   }
 };
+
+/**
+ *
+ * @param {number} area - Area in m^2
+ * @param {number} layersCount - Count of layers
+ * @returns Count of cans of paint
+ */
+const calculatePaintBoxes = (area, layersCount = 1) => {
+  const PAINT_IN_ONE_METR = 0.1;
+  const VOLUME_OF_CAN = 1;
+
+  if (!+area || area <= 0 || !+layersCount || layersCount <= 0) {
+    return 0;
+  }
+
+  const result = (+area * +layersCount * PAINT_IN_ONE_METR) / VOLUME_OF_CAN;
+  return Math.ceil(result);
+};
+
+console.log(calculatePaintBoxes(18, 2));
