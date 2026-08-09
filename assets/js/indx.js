@@ -24,8 +24,8 @@ function setWareCard(
 }
 
 // document.getElementById("ware-card").innerHTML = setWareCard(
-//   prompt("Введіть нахву товару"),
+//   prompt("Введіть назву товару"),
 //   prompt("Введіть опис товару"),
-//   prompt("Ввндіть цінц товару"),
+//   prompt("Введіть ціну товару"),
 //   prompt("Введіть стару ціну товару (за наявності)"),
 // );
